@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AngularJS Tutorials</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.3/angular.min.js"></script>
+</head>
+<body>
+<!--
+Expressions are used to bind application data to html. Expressions are written inside double braces like {{ expression}}.
+Expressions behaves in same way as ng-bind directives. AngularJS application expressions are pure javascript expressions
+and outputs the data where they are used.
+-->
+
+
+<div ng-app = "" ng-init = "quantity = 1;cost = 30; student = {firstname:'Mahesh',lastname:'Parashar',rollno:101};marks = [80,90,75,73,60]">
+    <p>Using strings- Hello {{student.firstname + " " + student.lastname}}!</p>
+    <p>Using numbers- Expense on Books : USD {{cost * quantity}}</p>
+    <p>Using object- Roll No: {{student.rollno}}</p>
+    <p>Using array- Marks(Math): {{marks[3]}}</p>
+</div>
+</body>
+</html>
